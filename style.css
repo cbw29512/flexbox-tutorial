@@ -46,35 +46,46 @@ body {
 /* TASK 1 */
 
 .task-1 .container {
+  display: flex;
 }
 
 /* TASK 2 */
 
 .task-2 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TASK 3 */
 
 .task-3 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 /* TASK 4 */
 
 .task-4 .option-1 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .task-4 .option-2 .container {
   display: flex;
 }
 
+.task-4 .option-2 .item:last-child {
+  margin-left: auto;
+}
+
 .task-4 .option-3 .container {
   display: flex;
+  
 }
 
 .task-4 .option-3 .item:first-child {
+  flex-grow: 1;
 }
 
 /* TASK 5 */
@@ -84,40 +95,51 @@ body {
 }
 
 .task-5 .item-1 {
+  flex: 3;
 }
 
 .task-5 .item-2 {
+  flex: 1;
 }
 
 .task-5 .item-3 {
+  flex: 1;
 }
 
 .task-5 .item-4 {
+  flex: 1;
 }
 
 /* TASK 6 */
 
 .task-6 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .task-6 .item {
+  flex-basis: 50%;
 }
 
 @media (min-width: 375px) {
   .task-6 .item {
+    display: flex;
+    flex-basis: 25%;
   }
 }
 
 /* TASK 7 */
 
 .task-7 .container {
+  display: flex;
 }
 
 .task-7 .item-1 {
+  order: 1;
 }
 
 .task-7 .item-3 {
+  order: -1;
 }
 
 /* TASK 8 */
@@ -127,4 +149,5 @@ body {
 }
 
 .task-8 .item-3 {
+  align-self: flex-end;
 }
